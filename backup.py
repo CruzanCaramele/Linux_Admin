@@ -23,7 +23,7 @@ if os.path.exists("backup.zip"):
 else:
     logging.info("creating backup.zip")
     try:
-	zip_file = zipfile.ZipFile("backup.zip", "w")
+        zip_file = zipfile.ZipFile("backup.zip", "w")
     except:
         err = sys.exc_info()
         logging.error("Unable to crate backup.zip!")
